@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html lang="hu" dir="ltr">
+<html lang="hu">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <title></title>
   </head>
   <body>
+    <div>
+      <div>
+        <form>
+          <div>
+            <label>Film neve: </label>
+            <input class="form-control filmInputs" type="text" name="nev" value="">
+          </div>
 
+          <div>
+            <label>Rendező neve: </label>
+            <input class="form-control filmInputs" type="text" name="nev" value="">
+          </div>
+
+          <div>
+            <label>Film kiadási éve: </label>
+            <input class="form-control filmInputs" type="number" name="nev" value="">
+          </div>
+
+          <div>
+            <button class="btn" type="button" name="button" onclick="felveszBtnClick()">Felvesz</button>
+          </div>
+
+          <div>
+            <button class="btn" type="button" name="button" onclick="kiirasBtnClick()">Kiírás</button>
+          </div>
+
+        </form>
+      </div>
+      <div>
+        <table id="kiirasTable" style="display: none">
+          <thead>
+            <th>Film neve</th>
+            <th>Rendező neve</th>
+            <th>Kiadási év</th>
+          </thead>
+          <tbody id="kiirasTablebody">
+          </tbody>
+        </table>
+      </div>
+    </div>
   </body>
   <script src="main.js" charset="utf-8"></script>
 </html>
